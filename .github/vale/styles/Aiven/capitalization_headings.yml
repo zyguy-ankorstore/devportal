@@ -57,8 +57,10 @@ exceptions:
   - Provectus
   - Python
   - Redis
+  - reStructuredText
   - Simple Authentication and Security Layer
   - Snowflake
+  - Sphinx
   - Spring
   - SQL Server
   - Startup
