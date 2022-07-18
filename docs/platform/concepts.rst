@@ -55,6 +55,6 @@ Learn about some of the key concepts for working with Aiven platform:
   
   Choosing a time series database in Aiven Console.
 
-* :doc:`Trouble creating or upgrading to a larger plan </docs/platform/concepts/trouble-upgrading>`.
+* :doc:`Working with larger plans</docs/platform/concepts/plan-upgrades>`.
 
-  How to fix trouble when creating or upgrading service to a larger plan.
+  How to prepare to create or upgrade a service to a larger plan.
