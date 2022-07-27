@@ -24,7 +24,8 @@ username and password for authentication. In most cases, you can re-use
 the same Jolokia endpoint configuration for all services within a
 project.
 
-.. image:: 2684968-accessing-jmx-metrics-via-jolokia_image1.png
+.. image:: /images/integrations/jolokia-service-integration-image-1.png
+.. image:: /images/integrations/jolokia-service-integration-image-2.png
 
 Next, to finally enable Jolokia integration, you need to go to the
 Service Overview page of each service you want to enable the integration
@@ -33,7 +34,7 @@ and then select Jolokia from the popup. After finishing the wizard the
 system will configure the endpoint on all nodes of the service that
 provide access to the metrics.
 
-.. image:: 2684968-accessing-jmx-metrics-via-jolokia_image2.png
+.. image:: /images/integrations/jolokia-service-integration-image-3.png
 
 Aiven Jolokia intergration is configured to allow HTTP POST request to
 read values from the service specific metrics. Bulk requests are
