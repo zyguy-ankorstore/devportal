@@ -1,20 +1,20 @@
-Accessing JMX metrics via Jolokia
-=================================
+Jolokia and Aiven
+=================
 
 Java applications export a wealth of monitoring metrics and information
 over the standard Java Management Extensions interface. Jolokia, on the
 other hand, is a HTTP/REST interface for accessing this information
 remotely. Jolokia is the fourth metrics integration support by Aiven
-after `Aiven InfluxDB &
-Grafana <https://help.aiven.io/services/integrations/getting-started-with-service-integrations>`__
+after `Aiven for InfluxDB® &
+Grafana® <https://help.aiven.io/services/integrations/getting-started-with-service-integrations>`__
 ,
 `Datadog <https://help.aiven.io/services/integrations/getting-started-with-datadog>`__
 and
 `Prometheus <https://help.aiven.io/services/integrations/using-aiven-with-prometheus>`__
 .
 
-Enabling Jolokia endpoint in Aiven
-----------------------------------
+Jolokia endpoint
+----------------
 
 To enable Jolokia integration for Aiven services you first need to
 create a new Jolokia endpoint configuration. This can be created from
@@ -24,8 +24,10 @@ username and password for authentication. In most cases, you can re-use
 the same Jolokia endpoint configuration for all services within a
 project.
 
-.. image:: /images/integrations/jolokia-service-integration-image-1.png
-.. image:: /images/integrations/jolokia-service-integration-image-2.png
+   .. image:: /images/integrations/jolokia-service-integration-endpoint.png
+      :alt: Jolokia service integration endpoint
+   .. image:: /images/integrations/jolokia-integration-endpoint-details.png
+      :alt: Jolokia integration endpoint details
 
 Next, to finally enable Jolokia integration, you need to go to the
 Service Overview page of each service you want to enable the integration
@@ -34,15 +36,16 @@ and then select Jolokia from the popup. After finishing the wizard the
 system will configure the endpoint on all nodes of the service that
 provide access to the metrics.
 
-.. image:: /images/integrations/jolokia-service-integration-image-3.png
+.. image:: /images/integrations/jolokia-service-integrations.png
+      :alt: Jolokia service integrations
 
-Aiven Jolokia intergration is configured to allow HTTP POST request to
+Aiven Jolokia integration is configured to allow HTTP POST request to
 read values from the service specific metrics. Bulk requests are
 supported for batch collection as well. For further information on the
 protocol, can refer to `Jolokia
 documentation <https://jolokia.org/reference/html/protocol.html>`__ .
 
-Please do note that many of the metrics are specific to a Kafka broker,
+Please do note that many of the metrics are specific to a Kafka® broker,
 so you may need to query each individual node for the full picture. Node
 IPs are represented by a single DNS name. In a command line you can use
 ``host`` command to get the list of IP addresses associated with a DNS

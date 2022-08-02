@@ -97,10 +97,10 @@ entries:
           entries:
             - file: docs/integrations/cloudwatch/cloudwatch-logs-console
             - file: docs/integrations/cloudwatch/cloudwatch-logs-cli
+    - file: docs/integrations/jolokia
+      title: Jolokia
     - file: docs/integrations/rsyslog
       title: RSyslog integration
-    - file: docs/integrations/accessing-jmx-metrics-via-jolokia
-      title: Accessing JMX Metrics via Jolokia
   - file: docs/tools
     entries:
       - file: docs/tools/cli
